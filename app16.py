@@ -47,5 +47,5 @@ def  plotting_demo():
     st.pyplot(fig)
     try:
         plotting_demo()  
-        except:      
-            pass
+    except:      
+        pass
