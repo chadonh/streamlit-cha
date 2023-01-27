@@ -53,7 +53,7 @@ def  plotting_demo():
         
         
     if select_language =='line graph':  
-    try:
-        plotting_demo()  
-    except:      
-        pass
+        try:
+            plotting_demo()  
+        except:      
+            pass
