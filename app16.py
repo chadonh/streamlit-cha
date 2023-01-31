@@ -48,7 +48,7 @@ def  plotting_demo():
     st.pyplot(fig)
     st.dataframe(money)
     
-    def bar_chart():
+def bar_chart():
 
     url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
 
