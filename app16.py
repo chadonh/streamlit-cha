@@ -91,7 +91,7 @@ def bar_chart():
 
 with st.form(key ='Form1'):
     with st.sidebar:
-         select_language = st.sidebar.radio('What do you want ?', ('line graph', '금리와 집값의 관계', '야구 순위와 승률'))
+         select_language = st.sidebar.radio('What do you want ?', ('금리와 집값의 관계', '야구 순위와 승률'))
         
         
 if select_language =='금리와 집값의 관계':        
