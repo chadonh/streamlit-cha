@@ -80,7 +80,7 @@ def bar_chart():
     fig, ax = plt.subplots(figsize=(12,8))
 
     
-    plt.bar(  x,  y,  color= yellow ) 
+    plt.bar(  x,  y,  color= 'red' ) 
 
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.4  ,   v + 0.01 ,  v   )
