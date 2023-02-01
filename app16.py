@@ -79,8 +79,8 @@ def bar_chart():
     
     fig, ax = plt.subplots(figsize=(12,8))
 
-    colors = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7' ,'C8', 'C9', 'C10' ]
-    plt.bar(  x,  y,  color= colors ) 
+    
+    plt.bar(  x,  y,  color= yellow ) 
 
     for   num ,   v    in   enumerate( y ):
         plt.text (  num -0.4  ,   v + 0.01 ,  v   )
@@ -91,14 +91,14 @@ def bar_chart():
 
 with st.form(key ='Form1'):
     with st.sidebar:
-         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph','corr graph','word cloud','box graph' ))
+         select_language = st.sidebar.radio('What do you want ?', ('line graph', '금리와 집값의 관계', '야구 순위와 승률'))
         
         
-if select_language =='line graph':        
+if select_language =='금리와 집값의 관계':        
     try:
          plotting_demo()  
     except:      
           pass
         
-elif select_language =='bar graph':
+elif select_language =='야구 순위와 승률':
     bar_chart()        
