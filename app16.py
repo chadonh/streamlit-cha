@@ -91,14 +91,14 @@ def bar_chart():
 
 with st.form(key ='Form1'):
     with st.sidebar:
-         select_language = st.sidebar.radio('What do you want ?', ('금리와 집값의 관계', '야구 순위와 승률'))
+         select_language = st.sidebar.radio('What do you want ?', ('Relationship between interest rates and house prices', 'Baseball Rankings and Odds'))
         
         
-if select_language =='금리와 집값의 관계':        
+if select_language =='Relationship between interest rates and house prices':        
     try:
          plotting_demo()  
     except:      
           pass
         
-elif select_language =='야구 순위와 승률':
+elif select_language =='Baseball Rankings and Odds':
     bar_chart()        
