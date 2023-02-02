@@ -83,7 +83,7 @@ def bar_chart():
     
     global  bb
     
-    bb = money
+    bb = baseball
     
     fig, ax = plt.subplots(figsize=(12,8))
 
