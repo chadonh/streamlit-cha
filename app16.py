@@ -22,9 +22,9 @@ def  plotting_demo():
 
     money = money[:] [money['A_YEAR']== option2]
     
-    global aa
+    global  aa
     
-    aa=money
+    aa = money
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
