@@ -115,7 +115,7 @@ if select_language =='Relationship between interest rates and house prices':
                       
         
 elif select_language =='Baseball Rankings and Odds':
-   tab3, tab4= st.tabs(["📈 Chart", "🗃 Data"])
+    tab3, tab4= st.tabs(["📈 Chart", "🗃 Data"])
     
     with tab1:
         tab1.subheader("A tab with a chart")
