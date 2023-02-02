@@ -118,9 +118,9 @@ elif select_language =='Baseball Rankings and Odds':
     tab3, tab4= st.tabs(["📈 Chart", "🗃 Data"])
     
     with tab3:
-        tab1.subheader("A tab with a chart")
+        tab3.subheader("A tab with a chart")
         bar_chart()
         
     with tab4:
-        tab2.subheader("A tab with the data")
+        tab4.subheader("A tab with the data")
         st.dataframe(bb)
