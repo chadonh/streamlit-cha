@@ -99,7 +99,7 @@ with st.form(key ='Form1'):
         
         
 if select_language =='Relationship between interest rates and house prices':        
-    tab1, tab2= st.tabs(["📈 Chart", "🗃 Data"])
+    tab1, tab2= st.tabs(["Chart", "Data"])
     
     with tab1:
         tab1.subheader("A tab with a chart")
