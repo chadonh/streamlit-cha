@@ -105,7 +105,7 @@ if select_language =='Relationship between interest rates and house prices':
         tab1.subheader("A tab with a chart")
         plotting_demo()
         
-     with tab2:
+    with tab2:
         tab2.subheader("A tab with the data")
         st.dataframe(aa)
                       
