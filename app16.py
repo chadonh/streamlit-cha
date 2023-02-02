@@ -81,6 +81,10 @@ def bar_chart():
     x = df7.팀
     y = df7.승률
     
+    global  bb
+    
+    bb = money
+    
     fig, ax = plt.subplots(figsize=(12,8))
 
     
@@ -91,7 +95,7 @@ def bar_chart():
 
     plt.title( "year korea baseball winrate data", position=(0.5,1.1))
     st.pyplot(fig)
-    st.dataframe(df7)
+    #st.dataframe(df7)
 
 with st.form(key ='Form1'):
     with st.sidebar:
@@ -111,4 +115,12 @@ if select_language =='Relationship between interest rates and house prices':
                       
         
 elif select_language =='Baseball Rankings and Odds':
-    bar_chart()        
+   tab3, tab4= st.tabs(["📈 Chart", "🗃 Data"])
+    
+    with tab1:
+        tab1.subheader("A tab with a chart")
+        bar_chart()
+        
+    with tab2:
+        tab2.subheader("A tab with the data")
+        st.dataframe(bb)
